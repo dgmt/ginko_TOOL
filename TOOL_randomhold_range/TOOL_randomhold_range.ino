@@ -2,6 +2,7 @@
  * Author: Vladimir Riznic
  * dzedaj011@gmail.com
  * March 2017.
+ * CV1, CV2 - bounding ranges
  */
 #include <TOOL.h>
 
