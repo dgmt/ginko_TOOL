@@ -2,8 +2,9 @@
  * Author: Vladimir Riznic
  * dzedaj011@gmail.com
  * March 2017.
- * CV1, CV2 - bounding ranges
+ * CV1 - Signal to sample
  * Clock - Needed
+ * Out - CV
  */
 #include <TOOL.h>
 
@@ -34,15 +35,8 @@ void loop() {
 void tick(){
   Serial.write("Inside the interrupt");
   int cv1 = analogRead(1);
-  int cv2 = analogRead(2);
-  int out_value = 0;
-  if (cv2 >= cv1){
-    out_value = random(cv1, cv2);
-  } else {
-    out_value = random(cv2, cv1);
-  }
-  int scaled_out = map(out_value, 0, 1023, 0, MAXIMUM);
+  int out_value = map(cv1, 0, 1023, 0, MAXIMUM);
   // write out the generated value
-  tool.dac(scaled_out);
+  tool.dac(out_value);
 }
 

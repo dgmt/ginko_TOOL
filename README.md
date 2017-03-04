@@ -24,7 +24,8 @@ Burn into your TOOL module as you would any other Arduino sketch.
 
 #### CV based
 * CV Offset
-* Sample & Hold with range
+* Random & Hold with random generator range selection
+* Sample & Hold
 
 #### Gate/Trigger based
 * Probabilistic Clock Divider
