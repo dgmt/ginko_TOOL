@@ -32,3 +32,4 @@ Burn into your TOOL module as you would any other Arduino sketch.
 
 #### Audio based
 * Simplest Bitcrush
+* Buffer Freeze (has problems for now)
