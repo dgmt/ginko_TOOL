@@ -31,3 +31,4 @@ Burn into your TOOL module as you would any other Arduino sketch.
 * Probabilistic Clock Divider
 
 #### Audio based
+* Simplest Bitcrush
